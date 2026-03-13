@@ -173,6 +173,28 @@ button:hover{
   background-color: rgba(239,239,239,0.66);
 }
 
+.tldr-label {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 6px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #1e5fa1;
+  background: rgba(30, 95, 161, 0.14);
+}
+
+.tldr-line {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  border-left: 3px solid #1e5fa1;
+  border-radius: 0 6px 6px 0;
+  background: rgba(30, 95, 161, 0.08);
+  line-height: 1.4em;
+}
+
 
 /* pre code {
   text-align: left;
