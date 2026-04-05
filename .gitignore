@@ -1,0 +1,4 @@
+papers/*
+!papers/PAPR Up-close/
+papers/PAPR Up-close/*
+!papers/PAPR Up-close/PAPR_Up_close__Close_up_Neural_Point_Rendering_Without_Holes_final.pdf
