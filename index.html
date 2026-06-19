@@ -2,7 +2,10 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Yanshu Zhang</title>
-  
+
+  <!-- Open all links in a new tab by default -->
+  <base target="_blank">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -23,7 +26,6 @@
               <p>
                 <name>Yanshu Zhang</name>
               </p>
-              <br>
               <!-- <br> -->
               <p>Hi there! I am a Ph.D. student in <a href="https://sfuapex.com/">APEX Lab</a> 
                 at <a href="https://gruvi.cs.sfu.ca/">Simon Fraser University</a>, 
@@ -42,12 +44,23 @@
                 <a href="https://github.com/zvict/"><i class="fa fa-github"></i>&nbsp&nbspGithub</a>
                 
               </p>
+
+              <div class="text2" style="margin-top:24px;">
+                <heading>News</heading>
+                <ul style="margin-top:8px; margin-bottom:0; padding-left:1.3em; line-height:1.7em;">
+                  <li> <a href="#pub-pointgt" target="_self">3x papers</a> accepted to <strong>ECCV 2026</strong>!</li>
+                  <li> <a href="#pub-papr-upclose" target="_self"><em>PAPR Up-close</em></a> accepted to <strong>3DV 2026</strong>.</li>
+                  <li> <a href="#pub-wimle" target="_self"><em>WIMLE</em></a> accepted to <strong>ICLR 2026</strong>.</li>
+                  <li> <a href="#pub-pim" target="_self"><em>PAPR in Motion</em></a> accepted as a <span style="color:red">Highlight</span>&nbsp;🌟 at <strong>CVPR 2024</strong>.</li>
+                  <li> <a href="#pub-papr" target="_self"><em>PAPR</em></a> accepted as a <span style="color:red">Spotlight</span>&nbsp;🌟 at <strong>NeurIPS 2023</strong>.</li>
+                </ul>
+              </div>
             </div>
- 
+
             <div class="item image">
               <!-- <img class="profile-photo" alt="profile photo" src="images/me.jpg"> -->
               <a href="game_of_life.html" title="this gonna waste u 5min", target="_blank">
-                <img src="images/me.jpg" alt="Image">
+                <img src="images/me_v2.png" alt="Image">
               </a>
             </div>
           </div>
@@ -58,6 +71,165 @@
             </div>
 
             <div class="container2">
+              <div class="item image2">
+                  <img src='images/rig-papr.png' width=180; height="auto">
+              </div>
+              <div class="item text2">
+              <a href="https://arxiv.org/abs/2606.06685">
+                  <font color=#1772d0>  <papertitle>RigPAPR: Rig-Based Animation of Static Neural Point Clouds from a Fixed-Viewpoint Video</papertitle></font>
+              </a>
+              <br>
+              <a href=https://sites.google.com/view/niopeng/home>Shichong Peng</a>,
+              <strong>Yanshu Zhang</strong>,
+              <a href=https://www.sfu.ca/~keli>Ke Li</a>
+              <br>
+              <em>arXiv</em>, 2026
+              <br>
+              <a href="https://arxiv.org/abs/2606.06685">arXiv</a> /
+<button id="bib_button" class="link", onclick="showBib('RigPAPR_bib')">BibTex</button>
+<div id='RigPAPR_bib' hidden>
+<pre><code>@article{peng2026rigpapr,
+  title={RigPAPR: Rig-Based Animation of Static Neural Point Clouds from a Fixed-Viewpoint Video},
+  author={Shichong Peng and Yanshu Zhang and Ke Li},
+  journal={arXiv preprint arXiv:2606.06685},
+  year={2026}
+}</code></pre>
+</div>
+              <p></p>
+              <p>
+                <span class="tldr-line"><span class="tldr-label">TL;DR</span>Rig and animate a static point cloud from a single fixed-viewpoint video</span><br>
+                RigPAPR auto-rigs a static neural point cloud and drives it with direct linear blend
+                skinning from a single fixed-viewpoint driving video, recovering a re-posable 3D asset.
+                Because PAPR carries no per-primitive shape, the surface re-forms naturally under
+                articulation, avoiding the joint-boundary gaps and spikes seen in Gaussian-splatting
+                and mesh-proxy baselines.
+              </p>
+              </div>
+            </div>
+
+        <hr>
+
+            <div class="container2" id="pub-pointgt">
+              <div class="item image2">
+                  <img src='images/pointgt-teaser-video.gif' width=180; height="auto">
+              </div>
+              <div class="item text2">
+              <a href="https://zvict.github.io/pointgt/">
+                  <font color=#1772d0>  <papertitle>PointGT: Simultaneous Geometry and Texture Editing for Point-Based Representations</papertitle></font>
+              </a>
+              <br>
+              <strong>Yanshu Zhang</strong>,
+              <a href=https://sfuapex.ca/author/george-shramko/>George Shramko</a>,
+              <a href=https://pratulsrinivasan.github.io/>Pratul P. Srinivasan</a>,
+              <a href=https://www.sfu.ca/~keli>Ke Li</a>
+              <br>
+              <em>ECCV</em>, 2026
+              <br>
+              <a href="https://zvict.github.io/pointgt/">Project Page</a> /
+              <a href="https://zvict.github.io/pointgt/static/pdfs/paper.pdf">Paper</a> /
+<button id="bib_button" class="link", onclick="showBib('PointGT_bib')">BibTex</button>
+<div id='PointGT_bib' hidden>
+<pre><code>@inproceedings{zhang2026pointgt,
+  title={PointGT: Simultaneous Geometry and Texture Editing for Point-Based Representations},
+  author={Yanshu Zhang and George Shramko and Pratul P. Srinivasan and Ke Li},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026}
+}</code></pre>
+</div>
+              <p></p>
+              <p>
+                <span class="tldr-line"><span class="tldr-label">TL;DR</span>Attention-based point renderer + deformation aware UV mapping</span><br>
+                PointGT combines an attention-based point representation with a learned UV mapping so that
+                object geometry and appearance can be edited simultaneously, supporting high-resolution
+                texture edits that persist under non-rigid geometry deformations.
+              </p>
+              </div>
+            </div>
+
+        <hr>
+
+            <div class="container2">
+              <div class="item image2">
+                  <img src='images/rendered_video_og-v2.gif' width=180; height="auto">
+              </div>
+              <div class="item text2">
+              <a href="https://zvict.github.io/p-core/">
+                  <font color=#1772d0>  <papertitle>P-CORE: Self-Supervised Surface Consistency for Point-Based Neural Editing</papertitle></font>
+              </a>
+              <br>
+              <strong>Yanshu Zhang</strong>,
+              <a href=https://sites.google.com/view/niopeng/home>Shichong Peng</a>,
+              <a href=https://mehranagh20.github.io>Mehran Aghabozorgi</a>,
+              <a href=https://amoazeni75.github.io>Alireza Moazeni</a>,
+              <a href=https://www.sfu.ca/~keli>Ke Li</a>
+              <br>
+              <em>ECCV</em>, 2026
+              <br>
+              <a href="https://zvict.github.io/p-core/">Project Page</a> /
+              <a href="https://zvict.github.io/p-core/static/pdfs/pcore_eccv2026.pdf">Paper</a> /
+<button id="bib_button" class="link", onclick="showBib('PCORE_bib')">BibTex</button>
+<div id='PCORE_bib' hidden>
+<pre><code>@inproceedings{zhang2026pcore,
+  title={P-CORE: Self-Supervised Surface Consistency for Point-Based Neural Editing},
+  author={Yanshu Zhang and Shichong Peng and Mehran Aghabozorgi and Alireza Moazeni and Ke Li},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026}
+}</code></pre>
+</div>
+              <p></p>
+              <p>
+                <span class="tldr-line"><span class="tldr-label">TL;DR</span>Supervise surface prediction of deformed points by the deformed surface</span><br>
+                P-CORE lets attention-based point representations undergo large non-rigid deformations
+                without holes or tears by enforcing that the predicted surface stays consistent before
+                and after random deformations, enabling zero-shot editing with substantially fewer artifacts.
+              </p>
+              </div>
+            </div>
+
+        <hr>
+
+            <div class="container2">
+              <div class="item image2">
+                  <img src='images/intrinsic-papr.png' width=180; height="auto">
+              </div>
+              <div class="item text2">
+              <a href="https://arxiv.org/abs/2407.00500">
+                  <font color=#1772d0>  <papertitle>Tackling Misattribution in 3D Intrinsic Decomposition via Proximity Attention Point Rendering</papertitle></font>
+              </a>
+              <br>
+              <a href=https://amoazeni75.github.io>Alireza Moazeni</a>,
+              <a href=https://sites.google.com/view/niopeng/home>Shichong Peng</a>,
+              <strong>Yanshu Zhang</strong>,
+              <a href=https://serchirag.github.io>Chirag Vashist</a>,
+              <a href=https://www.sfu.ca/~keli>Ke Li</a>
+              <br>
+              <em>ECCV</em>, 2026
+              <br>
+              <!-- <a href="papers/Intrinsic PAPR/Tackling_Misattribution_in_3D_Intrinsic_Decomposition_via_PAPR_ECCV2026.pdf">Paper</a> / -->
+              <a href="https://arxiv.org/abs/2407.00500">arXiv</a> /
+<button id="bib_button" class="link", onclick="showBib('IntrinsicPAPR_bib')">BibTex</button>
+<div id='IntrinsicPAPR_bib' hidden>
+<pre><code>@inproceedings{moazeni2026misattribution,
+  title={Tackling Misattribution in 3D Intrinsic Decomposition via Proximity Attention Point Rendering},
+  author={Alireza Moazeni and Shichong Peng and Yanshu Zhang and Chirag Vashist and Ke Li},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026}
+}</code></pre>
+</div>
+            <p></p>
+            <p>
+              <span class="tldr-line"><span class="tldr-label">TL;DR</span>Resolving misattribution in point-based 3D intrinsic decomposition</span><br>
+              Intrinsic PAPR identifies and fixes the misattribution issue in point-based inverse rendering,
+              where individual primitives learn incorrect appearance despite producing correct aggregated
+              renders. Using proximity attention point rendering for direct per-point supervision, it enables
+              accurate, view-consistent albedo and shading editing.
+            </p>
+              </div>
+            </div>
+
+        <hr>
+
+            <div class="container2" id="pub-papr-upclose">
               <div class="item image2">
                   <img src='images/papr-upclose.png' width=180; height="auto">
               </div>
@@ -95,7 +267,7 @@
 
         <hr>
 
-            <div class="container2">
+            <div class="container2" id="pub-wimle">
               <div class="item image2">
                   <img src='images/wimle.jpg' width=180; height="auto">
               </div>
@@ -135,7 +307,7 @@
 
         <hr>
 
-            <div class="container2">
+            <div class="container2" id="pub-pim">
               <div class="item image2">
                   <img src='images/pim-lego-crop.gif' width=1800; height="auto">
               </div>
@@ -178,46 +350,7 @@
 
         <hr>
 
-            <div class="container2">
-              <div class="item image2">
-                  <img src='images/intrinsic-papr.png' width=180; height="auto">
-              </div>
-              <div class="item text2">
-              <a href="https://arxiv.org/abs/2407.00500">
-                  <font color=#1772d0>  <papertitle>Intrinsic PAPR for Point-level 3D Scene Albedo and Shading Editing</papertitle></font>
-              </a>
-              <br>
-              <a href=https://amoazeni75.github.io>Alireza Moazeni</a>,
-              <a href=https://sites.google.com/view/niopeng/home>Shichong Peng</a>,
-              <strong>Yanshu Zhang</strong>,
-              <a href=https://serchirag.github.io>Chirag Vashist</a>,
-              <a href=https://www.sfu.ca/~keli>Ke Li</a>
-              <br>
-              <em>arXiv</em>, 2024
-              <br>
-              <a href="https://arxiv.org/abs/2407.00500">arXiv</a> /
-<button id="bib_button" class="link", onclick="showBib('IntrinsicPAPR_bib')">BibTex</button>
-<div id='IntrinsicPAPR_bib' hidden>
-<pre><code>@article{moazeni2024intrinsic,
-  title={Intrinsic PAPR for Point-level 3D Scene Albedo and Shading Editing},
-  author={Alireza Moazeni and Shichong Peng and Ke Li},
-  journal={arXiv preprint arXiv:2407.00500},
-  year={2024}
-}</code></pre>
-</div>        
-            <p></p>
-            <p>
-              <span class="tldr-line"><span class="tldr-label">TL;DR</span>Point-level 3D albedo and shading editing via intrinsic decomposition</span><br>
-              Intrinsic PAPR decomposes a 3D scene into albedo and shading components using
-              point-based neural rendering, enabling detailed point-level editing that remains
-              consistent across viewpoints without relying on complex shading models or simplistic priors.
-            </p> 
-          </div>
-        </div>
-
-        <hr>
-
-            <div class="container2">
+            <div class="container2" id="pub-papr">
                 <div class="item image2">
                     <img src='images/papr-crop.gif' width=180; height="auto">
                 </div>

@@ -1,11 +1,15 @@
 /* styles_new.css */
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     display: grid;
     grid-template-columns: 55% 45%;
     gap: 10px;
-    align-items: center;
+    align-items: start;
     margin: 0 auto;
-    max-width: 1040px;
+    max-width: 1240px;
   }
 
 
@@ -13,7 +17,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 40px;
-    max-width: 1020px;
+    max-width: 1120px;
     
     border: 1px solid #ECECEC; /* Light grey border for subtlety */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
@@ -53,7 +57,8 @@
     align-items: center;
     margin: 0 auto;
     margin-top: 6px;
-    max-width: 1040px;
+    max-width: 1240px;
+    scroll-margin-top: 24px;
   }
 
 .text2 {
