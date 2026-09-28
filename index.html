@@ -135,6 +135,16 @@
   year={2026}
 }</code></pre>
 </div>
+              <p></p>
+              <p>
+                <span class="tldr-line"><span class="tldr-label">TL;DR</span>FID and KNN-ball metrics break in high dimensions; use Chamfer distance instead</span><br>
+                We show that FID, which compares only feature means and covariances, gives a random 10K subset
+                of real ImageNet images an FID of about 4, and that KNN-ball precision/recall build inflated
+                supports in high-dimensional feature space that accept heavily corrupted, off-manifold images.
+                We propose Chamfer distance, which directly measures cross-set nearest-neighbor distances between
+                real and generated samples, giving interpretable fidelity and coverage scores that are less
+                sensitive to the neighborhood size and computationally efficient.
+              </p>
               </div>
             </div>
 
