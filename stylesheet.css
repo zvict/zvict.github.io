@@ -212,3 +212,8 @@ button:hover{
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* keep each icon with its label when the links row wraps */
+.profile-links a {
+  white-space: nowrap;
+}
